@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para mi Corazón de Sandía 🌸</title>
+  <style>
+   :root{
+  --color-morado:#6a0dad;
+  --color-azul:#3b82f6;
+  --color-rosa-claro:#f9d5e5;
+  --color-rosa-suave:#fce4ec;
+  --color-blanco:#fff;
+  --color-texto:#333;
+	  }
+	   
+	   @media (max-width:600px){
+
+header h1{
+font-size:2rem;
+}
+
+.card{
+padding:20px;
+}
+
+.slider img{
+width:220px;
+height:160px;
+}
+
+}
+	   
+	   body::before{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:url("https://www.transparenttextures.com/patterns/stardust.png");
+  opacity:0.3;
+  pointer-events:none;
+
+}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, var(--color-rosa-suave), var(--color-rosa-claro));
+      color: var(--color-texto);
+    }
+    header {
+      background: linear-gradient(90deg, var(--color-morado), var(--color-azul));
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 60px 20px 40px;
+      box-shadow: 0 4px 8px rgba(106,13,173,0.5);
+    }
+	  
+	  .card:last-child{
+  border:2px solid var(--color-morado);
+  background:linear-gradient(135deg,#fff,#fce4ec);
+}
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid var(--color-rosa-claro);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+	  
+	  .card:last-child{
+  border:2px solid var(--color-morado);
+  background:linear-gradient(135deg,#fff,#fce4ec);
+}
+	  
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px 80px;
+	
+    }
+    .card {
+      background: var(--color-blanco);
+      border-radius: 16px;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 20px rgba(106,13,173,0.15);
+    }
+    .card h2 {
+      color: var(--color-morado);
+      margin-bottom: 14px;
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+    .card p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    footer {
+      background: var(--color-rosa-claro);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  margin-bottom: 40px;
+}
+
+.slider-inner {
+  display: flex;
+  animation: slideInfinite 25s linear infinite;
+}
+
+.slider img {
+  height: 200px; /* altura más baja */
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+@keyframes slideInfinite {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* se ajusta según cantidad de fotos */
+}
+
+	  .card{
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card{
+  transform:scale(0.95);
+}
+
+.card.visible{
+  transform:scale(1);
+}
+	  @keyframes aparecerTitulo{
+  from{
+    opacity:0;
+    transform:translateY(-20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+header h1{
+  animation:aparecerTitulo 1.5s ease;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/3w5WSbJh/bbnn.jpg" alt="Foto juntos">
+    <h1>Para mi Corazón de Sandía 🌸</h1>
+    <p>23.02.2023 — 29.10.2023</p>
+	  <p id="contador"></p>
+  </header>
+
+  <main class="container">
+
+    <div class="slider">
+      <div class="slider-inner">
+        <img src="https://i.postimg.cc/3J3BjvZt/bbnn-1.jpg" alt="Foto 1">  
+        <img src="https://i.postimg.cc/2j0qJLDc/nm.jpg" alt="Foto 2">
+        <img src="https://i.postimg.cc/bNdGjYYz/nnnn.jpg" alt="Foto 3">
+        <img src="https://i.postimg.cc/3RgXm80M/nmms.jpg" alt="Foto 4">
+		   <img src="https://i.postimg.cc/3J3BjvZt/bbnn-1.jpg" alt="Foto 5">  
+        <img src="https://i.postimg.cc/2j0qJLDc/nm.jpg" alt="Foto 6">
+        <img src="https://i.postimg.cc/bNdGjYYz/nnnn.jpg" alt="Foto 7">
+        <img src="https://i.postimg.cc/3RgXm80M/nmms.jpg" alt="Foto 8">
+		   <img src="https://i.postimg.cc/3J3BjvZt/bbnn-1.jpg" alt="Foto 1">  
+        <img src="https://i.postimg.cc/2j0qJLDc/nm.jpg" alt="Foto 2">
+        <img src="https://i.postimg.cc/bNdGjYYz/nnnn.jpg" alt="Foto 3">
+        <img src="https://i.postimg.cc/3RgXm80M/nmms.jpg" alt="Foto 4">
+		   <img src="https://i.postimg.cc/3J3BjvZt/bbnn-1.jpg" alt="Foto 5">  
+        <img src="https://i.postimg.cc/2j0qJLDc/nm.jpg" alt="Foto 6">
+        <img src="https://i.postimg.cc/bNdGjYYz/nnnn.jpg" alt="Foto 7">
+        <img src="https://i.postimg.cc/3RgXm80M/nmms.jpg" alt="Foto 8">
+      </div>
+    </div>
+
+      <!-- Cartas -->
+    <section class="card">
+      <h2>📩 Carta 1: Cómo empezó todo
+</h2>
+      <p>Nos conocimos en la escuela, y al principio solo éramos eso: dos personas que se caían bien. Éramos amigos, sí, pero había algo más rondando desde el principio, aunque ninguno lo decía en voz alta. Siete meses compartiendo risas, momentos raros, silencios incómodos que se fueron volviendo cómodos.
+
+Con el tiempo, empecé a notar cosas que antes no veía. Cómo te reías, cómo te enojabas por tonterías, cómo escuchabas sin interrumpir. Eras constante, incluso cuando yo no lo era. Sin querer, te volviste esa persona a la que quería contarle todo, aunque no siempre supiera cómo decirlo.
+Y también me enamoró tu forma de tratar a los demás. A los animales, a los viejitos, a los niños, a los perros callejeros… con una ternura tan natural que a veces parecía que el mundo se detenía cuando tú mirabas con cariño. Eso decía mucho de ti, más de lo que tú misma te das cuenta.
+
+Tú viste todo. Me viste interesándome por otras personas, intentando entenderme en otros brazos, buscando algo que en realidad ya estaba ahí, contigo. Y aunque hubieras tenido mil razones para alejarte, te quedaste. Me viste sin filtros y aun así decidiste apostar por lo que había entre nosotros.
+
+A veces pienso en eso, en lo fácil que hubiera sido que todo quedara en una amistad más. Pero no. Nos elegimos sin tanta vuelta. Y desde entonces no hay juego, no hay doble cara. Te lo dije, y lo mantengo: desde que estás conmigo, soy solo tuyo.
+
+A veces siento que el tiempo vuela, pero hay algo en nosotros que se mantiene firme. Real. No perfecto, pero sí honesto. Y eso, créeme, vale más que cualquier cuento bonito.
+
+No sé qué venga después, ni cómo será el futuro, pero sí sé algo: contigo las cosas se sienten diferentes. No por lo que hicimos al principio, sino por lo que seguimos construyendo cada día, sin tanto ruido, sin promesas vacías, solo con hechos.
+
+Y eso —tú, nosotros— es algo que no pienso tomar a la ligera.
+
+Con todo lo que soy,
+yo</p>
+    </section>
+    <section class="card">
+      <h2>📩 Carta 2: Lo que sentí cuando me enamoré de ti</h2>
+      <p>No fue de golpe. No fue como en las películas, donde una mirada basta y todo se detona. Lo nuestro fue más como un despertar lento, como si algo dentro de mí se hubiera ido encendiendo de a poquito, hasta que de repente ya no hubo marcha atrás.
+
+Me fui enamorando de ti en detalles chiquitos. En cómo te reías cuando algo realmente te daba risa. En cómo hablabas con las personas, incluso con las que no te caían tan bien. En cómo cuidabas a los demás sin que nadie te lo pidiera. Me fui enamorando sin darme cuenta, y cuando lo noté, ya estabas metida en mis pensamientos de una forma que no sabía cómo explicar.
+
+Fue una mezcla de calma y nervios. Calma por sentirme bien contigo, por saber que podía ser yo mismo. Y nervios porque, aunque me sentía seguro, también me daba miedo perder lo que teníamos. Me daba miedo que no sintieras lo mismo, que no vieras lo que yo veía tan claro.
+
+Pero lo viste. Y eso hizo que me enamorara más.
+
+No fue un solo momento. Fueron muchos. Fueron los silencios, los mensajes, las miradas, las bromas, las veces que te enojaste y aún así volviste a sonreír. Fueron tus gestos, tu paciencia, tu forma de quedarte cuando todo indicaba que era más fácil irse.
+
+Me enamoré de ti sin planearlo, pero hoy no imagino haberlo hecho de otra forma.</p>
+    </section>
+    <section class="card">
+      <h2>📩 Carta 3: Momentos que nunca voy a olvidar contigo</h2>
+      <p>Hay recuerdos que se me quedan pegados al pecho como si quisieran quedarse ahí para siempre. Momentos que, aunque a ti no te gusten tanto, para mí tienen un valor muy profundo. Como ese primer beso en las trajineras… sí, ya sé que no fue perfecto. Hubo cosas incómodas, cosas que tal vez preferirías borrar, pero para mí fue el instante en el que sentí que lo que había entre nosotros era más que una amistad. Fue el primer paso, aunque torpe, hacia algo que después se volvió lo más bonito que tengo.
+
+Y luego vino nuestra primera cita como novios, en el bosque, pintando con acuarelas. Ese día fui feliz de una forma tranquila, de esas que te hacen pensar: “esto es justo lo que quiero para mi vida”. Verte concentrada, manchándote los dedos de colores, riéndote mientras pintábamos sin saber muy bien lo que hacíamos, solo dejando que el momento nos llevara... fue hermoso.
+
+También están esas veces que fuiste a verme jugar fútbol. Tal vez para ti eran partidos normales, pero para mí eran momentos gigantes. Voltear a ver las gradas y encontrarte ahí me hacía sentir invencible, como si con solo tu presencia pudiera hacerlo todo bien.
+
+Y no puedo dejar fuera esas risas interminables cuando estamos con tu familia, con la mía o simplemente solos. Esos momentos sencillos, sin planes, sin pretensiones. Tú y yo, hablando de cualquier cosa, riéndonos por nada, sintiendo que todo está bien si estamos juntos.
+
+Son esas memorias —las grandes y las pequeñas— las que hacen que te ame más. Porque en cada una de ellas estás tú, siendo tú… y eso, créeme, es lo mejor que me ha pasado.</p>
+    </section>
+    <section class="card">
+      <h2>📩 Carta 4: Las cosas que más amo de ti</h2>
+      <p>Podría empezar esta carta diciendo que me encanta todo de ti. Y no sería mentira, pero tampoco sería suficiente. Porque cuando digo que me encantas, no me refiero solo a que eres hermosa —que lo eres—, sino a que hay mil cosas específicas que me tienen completamente enamorado.
+
+Tus ojos… tus ojos son mi lugar favorito. Son la primera cosa que me atrapó y lo último que quiero dejar de mirar cada vez que nos despedimos. Tienen algo que no puedo explicar, como si hablaran cuando tú te quedas callada. Como si dijeran: “estoy aquí”, incluso cuando no estás diciendo nada.
+
+Tu olor… ese olor tuyo que se queda en mi ropa, en mi almohada, en mi memoria. Podría reconocerlo entre mil, y cuando lo siento, me da esa tranquilidad que solo tú me das.
+
+Tu boca, tu nariz, tu cabello, tu cuerpo… todo en ti tiene un ritmo, una forma, un lenguaje que entiendo sin tener que pensarlo mucho. No es solo atracción, es conexión. Es mirar cada parte de ti como algo que admiro, que respeto, que quiero cuidar.
+
+Pero si solo hablara de lo físico, me quedaría corto. Lo que más amo de ti está por dentro.
+
+Amo tu sensibilidad, esa forma tan tuya de sentirlo todo intensamente. Tu sencillez, que hace que incluso lo más complicado se sienta liviano cuando tú lo explicas o lo enfrentas. Tu carisma, que ilumina a los demás sin que te lo propongas. Tu carácter, que aunque a veces te haga pelear con el mundo, es la prueba de que sabes lo que vales.
+
+Y amo, sobre todo, tu bondad. Esa empatía tan tuya, tan profunda, tan real. Incluso cuando el mundo no te trata bien, tú sigues estando para las personas. No cambias, no te vuelves dura, no te rindes. Y eso… eso me rompe y me conmueve cada vez. Porque eres luz, aunque a veces tú no lo veas.
+
+No me canso de descubrir cosas nuevas que me gustan de ti. Y si esto sigue así, sé que podría pasarme la vida escribiendo cartas como esta… y aún me faltaría espacio para decirlo todo.</p>
+    </section>
+    <section class="card">
+      <h2>📩 Carta 5: Si pudiera darte el mundo</h2>
+      <p>Si pudiera darte el mundo, lo haría sin pensarlo. No por obligación, no por exagerar… simplemente porque sé que te lo mereces. Porque hay algo en ti que no se encuentra dos veces en esta vida, y yo tengo la suerte de haberlo encontrado.
+
+Si pudiera, te daría un lugar donde siempre pudieras sentirte en paz. Un espacio solo tuyo, donde el ruido de afuera no te alcanzara. Donde pudieras ser tú sin filtros, sin juicios, sin miedo a romperte.
+
+Te daría cielos despejados cada vez que te sintieras abrumada. Te llenaría de mañanas suaves y noches tranquilas. Te regalaría días en los que todo saliera bien, solo para verte sonreír sin preocupaciones.
+
+Si pudiera darte el mundo, lo haría con tus colores favoritos. Con lugares donde los perros callejeros tengan hogar, donde los niños sean escuchados, donde la gente sea buena como tú, aunque el mundo no siempre te lo devuelva.
+
+Pero como no puedo darte el mundo, te doy lo que sí tengo: a mí. Mi tiempo, mis ganas, mis abrazos, mi lealtad, mi mirada fija en ti incluso cuando no te das cuenta. Te doy mis manos para que nunca sientas que estás sola. Te doy mi risa, mi hombro, mis silencios si los necesitas.
+
+Tal vez no tenga mucho, pero lo que tengo, lo entrego entero. Porque si tú estás en mi vida, no necesito que el mundo sea perfecto… solo necesito que tú estés bien.</p>
+    </section>
+    <section class="card">
+      <h2>📩 Carta 6: Cuando estás triste</h2>
+      <p>Hay días en los que te veo apagarte poquito, como si algo dentro de ti estuviera cargando más de lo que debería. Días en los que tu mirada baja, tu voz se acorta, y te metes en ti misma como buscando un rincón donde el mundo no moleste.
+
+Y duele… me duele no poder entrar a ese rincón contigo, me duele no poder quitarte todo eso que a veces cargas sola aunque no deberías.
+
+Cuando estás triste, solo quiero tomarte la mano y recordarte que no estás sola. Que no tienes que ser fuerte todo el tiempo. Que no necesitas disimular con sonrisas o esconder lo que sientes. Aquí conmigo puedes ser todo: suave, rota, cansada, vulnerable. Y aún así, amada.
+
+Quisiera tener palabras perfectas para hacerte sentir bien, pero a veces no hacen falta tantas. A veces basta con que sepas que estoy. Que estoy aunque no digas nada. Que estoy aunque no entiendas por qué te sientes así. Que estoy aunque no pueda resolverlo, pero no me voy a ir.
+
+Y si no quieres hablar, no importa. Me quedo en silencio. Pero cerca. Porque eso es lo que quiero que siempre recuerdes: que estés bien o mal, feliz o hecha pedazos, yo voy a estar aquí.
+
+Porque incluso en tus días grises, tú sigues siendo mi lugar favorito.</p>
+    </section>
+    <section class="card">
+      <h2>📩 Carta 7: Lo que aprendí amándote</h2>
+      <p>Amarte no solo ha sido sentir, ha sido también aprender. Porque llegaste a mi vida como quien no busca enseñar nada, pero sin darte cuenta me diste lecciones que no se aprenden en libros ni se olvidan en días.
+
+Contigo entendí que amar no es solo querer. Es cuidar, es mirar con atención, es estar incluso cuando no se dice nada. Aprendí que las personas no son perfectas, y que eso no importa cuando lo que tienen dentro vale tanto como lo que tienes tú.
+
+Aprendí a tener paciencia, a no siempre tener la razón, a reconocer mis errores. A no huir cuando algo se complica, sino a quedarme y ver cómo lo resolvemos juntos. Aprendí a escuchar no solo tus palabras, sino también tus silencios.
+
+Amándote descubrí que puedo ser tierno sin sentirme débil. Que puedo confiar sin miedo, y que el amor —cuando es verdadero— no pesa, no obliga, no aprieta… acompaña.
+
+Me enseñaste que los detalles más simples pueden hacerme el día. Que una risa tuya, una mirada de esas que solo tú sabes dar, un mensaje de “ya llegué bien” puede cambiar por completo mi estado de ánimo.
+
+Y sobre todo, aprendí que cuando uno ama de verdad, no se trata de estar feliz todo el tiempo… sino de elegir a la persona incluso en los días difíciles. Y yo, sin duda, te elijo cada día.
+
+Gracias por todo lo que me has mostrado, sin darte cuenta. Porque amarte me ha hecho mejor. Más suave, más atento, más yo.</p>
+    </section>
+    <section class="card">
+      <h2>📩 Carta 8: Lo que me gusta de estar contigo</h2>
+      <p>Estar contigo tiene algo especial… algo que no sabría explicar bien, pero que siento cada vez que estamos juntos, aunque sea en silencio, aunque no estemos haciendo nada.
+
+Me gusta cómo se siente el tiempo contigo. Pasa rápido, pero no se me escapa. Lo disfruto. Me gusta que hasta lo más cotidiano —esperar el transporte, ir por algo de comer, caminar sin rumbo— se vuelve bonito si tú estás ahí.
+
+Me gusta tu risa. No solo cómo suena, sino lo que provoca. Me contagia. Me desarma. Me recuerda que hay cosas en la vida que valen mucho más que cualquier preocupación.
+
+Me gusta cómo me miras cuando crees que no me doy cuenta. Y también cuando sí te das cuenta y me haces sentir visto, como si realmente importara lo que pienso, lo que siento, lo que soy.
+
+Me gusta la confianza que hemos construido. Saber que puedo decirte lo que me pasa sin miedo, saber que tú puedes hacer lo mismo conmigo. Eso no es cualquier cosa. Es algo que cuido como se cuida una flor frágil, con cariño, con respeto, con ganas.
+
+Y me gusta que estés. Tan simple como eso. Que estés en mi vida. Que existas y que, de todas las personas que hay en el mundo, tú seas quien camina conmigo.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 9: Para cuando dudes de ti misma</h2>
+      <p>No importa cuánto lo dudes tú: yo te conozco. Y sé lo fuerte que eres, incluso cuando tú no lo ves. Eres valiente por seguir dando, por seguir amando, por seguir intentando, aunque el mundo a veces no sepa corresponderte.
+
+Eres luz, incluso cuando te sientes apagada. Eres buena, aunque a veces te fallen. Eres hermosa, aunque el espejo o el ánimo te quieran decir lo contrario. Y eres suficiente, siempre. No porque yo lo diga, sino porque lo eres por ti.
+
+A veces la mente se pone ruidosa y cruel, lo sé. A veces te exige tanto que olvidas todo lo que ya has hecho, todo lo que ya eres. Y en esos momentos, solo quiero que recuerdes esto: no estás sola. Tienes derecho a cansarte, a llorar, a no saber qué sigue. Pero también tienes el derecho —y el poder— de levantarte, de sanar, de volver a ti.
+
+No quiero que seas perfecta. Quiero que seas tú. Con todo lo que eso implica. Porque así, tal cual eres, yo te admiro. Y no estás aquí por casualidad: estás porque vales. Porque brillas. Porque eres muchísimo más de lo que alcanzas a ver en tus días grises.
+
+Y si algún día olvidas todo esto… yo me voy a encargar de recordártelo, una y otra vez, hasta que lo vuelvas a creer.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 10: Cómo me cambia el día solo con verte</h2>
+      <p>No sé si tú lo notas, pero el solo hecho de verte puede cambiarme todo. Hay días en los que todo parece ir mal, en los que estoy harto, cansado, frustrado… y entonces llegas tú. Con tu voz, con tu risa, con tu forma tan tu de estar.
+
+Y no es que todo se arregle de golpe, no. Pero se vuelve más llevadero. Me calma el verte. Me alivia. Me hace sentir que no importa cuán pesado esté el mundo allá afuera, si tú estás cerca, las cosas no pueden estar tan mal.
+
+Hay algo en ti que tiene efecto sobre mí. Tu mirada, tus palabras, incluso tus silencios. A veces solo necesito un abrazo tuyo para que todo lo que me pesa deje de doler tanto. A veces ni siquiera necesito que digas nada, con que estés, basta.
+
+Tu presencia tiene esa magia: no fuerza nada, no promete arreglarme el mundo… pero me da ganas de seguir en él.
+
+Y por eso, cada vez que te veo, incluso en los días más grises, sé que algo bueno sigue existiendo. Y ese algo, eres tú.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 11: Cuando me abrazas, el mundo se detiene</h2>
+      <p>Hay algo en tus abrazos que no sé explicar del todo, pero lo siento. Lo siento en el pecho, en la espalda, en la respiración que por fin se hace lenta cuando estás cerca.
+
+Cuando me abrazas, el mundo se calla. Todo lo urgente deja de serlo. Todo lo que me pesa, se vuelve un poquito más ligero. No sé si tú lo notas, pero cuando me abrazas, mi mente se detiene un rato… y por fin descanso.
+
+No importa si fue un día largo, si estoy de malas o si no encuentro las palabras. Tú me abrazas, y con eso me dices lo que necesito.
+Con ese abrazo, me dices que no tengo que ser fuerte todo el tiempo,
+que contigo puedo soltar,
+que tú me sostienes si me caigo.
+
+Y yo, que no siempre sé cómo mostrar lo que siento, me dejo estar. Porque contigo puedo. Porque en ese momento no necesito explicar nada, ni esconder nada. Solo respirar contigo ahí, apretándome justo lo suficiente como para saber que estás, que te quedas.
+
+Tienes ese don: el de hacerme sentir hogar. Y por eso, de todas las cosas que me das, tus abrazos son de mis favoritas.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 12: Cosas tuyas que me dan risa y me encantan</h2>
+      <p>Hay cosas tuyas que no sé si tú misma notas, pero yo las tengo bien guardadas. Me dan risa, me enternecen, y a veces me hacen quererte más sin saber por qué.
+
+Como cuando haces una cara rara justo después de reírte, como si te diera pena haber reído tanto.
+O cuando te haces la enojada, pero no te sale porque al segundo se te escapa una sonrisa.
+O cuando hablas con animalitos, con esa vocecita que también usas conmigo y me derrite cada vez.
+
+Me encanta cómo te burlas de mí de formas tan específicas que solo tú puedes inventar. Y cómo a veces te ríes sola y luego me cuentas y ni siquiera era tan gracioso, pero tú lo haces gracioso.
+O cuando te clavas en una palabra o frase nueva y la repites cada dos minutos como si fuera parte de ti desde siempre.
+
+Y una de mis favoritas: cuando vas a contarme algo con toda la emoción del mundo, te quedas pensando unos segundos… y terminas diciendo “ya se me olvidó”, con una carita que me da risa y ganas de abrazarte al mismo tiempo.
+
+Ni hablar de tus bailes espontáneos, que surgen de la nada, como si tu cuerpo tuviera una fiesta propia y tú solo te dejaras llevar.
+
+Son cosas simples, lo sé. Pero son tuyas. Y cuando aparecen, me dan una felicidad suave, de esas que se sienten en el pecho.
+Y aunque me ría, no te burles de mí cuando me quedo viéndote como menso… es que ahí, justo en esos momentos, también me estás enamorando.</p>
+    </section>
+<section class="card">
+      <h2>📩Carta 13: Cosas que me gustaria decirte mas seguido.</h2>
+      <p>A veces me quedo pensando en todas las cosas que no te digo tanto como quisiera. No porque no las sienta, sino porque a veces no encuentro el momento, o porque no quiero sonar exagerado. Pero hoy sí quiero decirlas.
+
+Quisiera decirte más seguido lo mucho que te admiro. No solo por lo bonita que eres (que sí lo eres, muchísimo), sino por la forma en la que te enfrentas al mundo, aunque a veces te duela. Por cómo te preocupas por los demás, incluso cuando tú estás rota por dentro. Por tu manera de querer, que es tan honesta, tan sin reservas.
+
+Quisiera repetirte más seguido que me haces bien. Que hay días en los que estoy a punto de colapsar, y solo pensar en ti ya me cambia el ritmo del corazón. Que me haces sentir visto, querido, suficiente.
+Que contigo aprendí que ser amado también se siente tranquilo.
+
+Y ya sé que suena loco, pero a veces me imagino cómo sería tenerte en versión miniatura, así del tamaño de un frasquito. Guardarte en mi mochila, llevarte en el bolsillo, sacarte en los días grises y que me hables con esa voz tuya que todo lo calma.
+Y no, no es porque quiera que vivas ahí… es que me haces tanta falta cuando no estás, que a veces me gustaría poder tenerte cerquita todo el tiempo.
+
+También hay cosas pequeñas que haces y que te salen tan natural, pero que a mí me hacen sentir querido sin que tú lo sepas:
+cuando me miras y sonríes como si yo fuera lo más bonito que viste ese día,
+cuando celebras cosas mías aunque sean pequeñas,
+cuando te emocionas por verme, aunque hayan pasado solo unas horas.
+
+Todo eso —tus gestos, tus silencios, tu forma de estar— me han hecho sentir amado de una forma nueva.
+Y por eso, aunque no te lo diga siempre, aunque no lo grite a cada rato, quiero que lo sepas: tú eres mi lugar seguro, mi alegría inesperada, y mi forma favorita de sentir amor.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 14: Gracias por quedarte</h2>
+      <p>Gracias por no rendirte conmigo.
+
+Por todas esas veces que, aunque tuviste motivos para enfadarte, para frustrarte, para decir “hasta aquí”, elegiste quedarte. Elegiste intentarlo otra vez. Elegiste apostarle a nosotros.
+
+Sé que no siempre soy fácil. Que a veces me encierro, me tardo en entender, me cuesta decir lo que siento. Que no siempre respondo como esperas o como mereces. Y aún así, estás. Me abrazas cuando no lo pido, me hablas cuando me encierro, me aguantas incluso cuando no tengo las palabras justas.
+
+Gracias por quedarte cuando era más sencillo irse. Por levantar lo que yo mismo no supe cuidar a tiempo.
+Por enseñarme, sin decirlo, que amar también es tener paciencia, que amar también es elegir todos los días, incluso cuando cuesta.
+
+A veces pienso en cómo habría sido mi vida si no hubieras apostado por mí, si no hubieras visto algo que yo todavía no veía en mí mismo. Y no lo digo a la ligera: gracias a ti, a tu manera de amar, entendí que el amor no solo se siente bonito, también se construye, se cuida, se sostiene.
+
+Tú me has sostenido más veces de las que puedo contar. En tus palabras, en tu silencio, en tu presencia. Y por eso —por todo eso— te prometo seguir creciendo, seguir aprendiendo, seguir eligiéndote.
+
+Porque tú me enseñaste que el amor real no es el que nunca falla, sino el que se queda incluso cuando las cosas se ponen difíciles.
+
+Y no hay nada más valioso que eso.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 15: Una carta sin motivo</h2>
+      <p>No hay un porqué específico para esta carta. No pasó nada grande en ese momento en que la escribí, no era un aniversario ni un día especial. Solo me dieron ganas de hablarte. De decirte lo que a veces me nace sin mucha explicación, como cuando te abrazo de la nada. Como cuando te miro mucho y solo digo “te quiero”.
+
+Contigo los “porque sí” también son válidos. Porque pensarte ya es motivo suficiente para hacer algo bonito.
+
+Me gusta que seas esa persona que puede cambiarme el humor solo con aparecer. Me gusta que tu voz sea ese lugar en donde puedo descansar, aunque no me lo proponga. Me gusta cuando me hablas como si supieras que necesito escucharte, incluso sin decirlo.
+
+No tengo un gran discurso. No estoy tratando de explicarte nada profundo. Solo quería que tuvieras esto: una carta escrita porque sí, pero con todo el amor.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 16: Gracias también por tu familia</h2>
+      <p>Hay algo de ti que se extiende más allá de ti misma: tu familia.
+
+Desde el principio, cuando empecé a compartir momentos con ellos, sentí esa calidez que muchas veces no se puede explicar con palabras. No son solo tu mami, tu papi, Marcos, tus hermanos o tus seres cercanos… son parte de ti. Y gracias a ti, también se volvieron parte de mi historia.
+
+Me han hecho sentir bienvenido, cómodo, y lo más importante: en paz. A veces solo estar ahí, compartir una comida, escuchar una plática o una risa en medio de la sala, me ha hecho pensar en lo bonito que es crecer junto a alguien que también te deja entrar en su mundo así, con tanta confianza.
+
+Sé que tú eres el corazón de ese vínculo. Porque tú tienes esa forma de conectar, de hacer sentir seguro a quien se acerca, de unir sin forzar. Y tu familia, al abrirme las puertas, también me mostró una parte más de ti.
+
+Así que esta carta no es solo para ti, es para todo lo que traes contigo. Para todo lo que me regalaste al dejarme formar parte de lo que tú llamas hogar.
+
+Gracias por eso también.
+Por mostrarme que el amor no solo se da entre dos, sino que a veces se comparte en mesa grande, con historias cruzadas y abrazos sinceros.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 17: Más allá del título</h2>
+      <p>A veces la palabra “novia” se queda corta.
+Porque lo que eres para mí va mucho más allá de eso.
+
+Eres mi amiga, de esas que saben cuándo decir algo y cuándo solo quedarse.
+Eres mi refugio, cuando la vida se me complica y no sé a dónde ir.
+Eres mi impulso, cuando no tengo energía, cuando dudo, cuando me caigo.
+Eres la calma que me hace respirar profundo, pero también el fuego que me hace moverme.
+Eres el abrazo que no tengo que pedir, el silencio cómodo, la mirada que entiende sin palabras.
+
+A veces te hablo y siento que estás más dentro de mí que muchas ideas que llevo desde siempre.
+Otras veces solo te escucho hablar y pienso: “qué suerte la mía”.
+Porque en ti encontré eso que no sabía que estaba buscando:
+una forma de sentirme acompañado, libre y cuidado al mismo tiempo.
+
+
+No sé si sepas lo mucho que significas en mi vida.
+Pero quiero que lo tengas claro:
+para mí no eres solo “mi novia”.
+Eres una parte de mi casa, de mi cabeza, de mis ganas de estar bien.
+Y eso vale más que cualquier título que pueda darte.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 18: De esas noches en las que hablamos de verdad</h2>
+      <p>Hay algo en nuestras conversaciones largas que no puedo explicar del todo, pero que siento profundamente.
+
+A veces ni siquiera hace falta que digamos mucho. Solo acostarnos de lado, viéndonos a los ojos, porque a ti te gusta sentirte conectada así conmigo. Y yo feliz de hacerlo, porque también me encanta ese silencio compartido que se siente tan tuyo y tan mío.
+
+Ahí estamos: tú y yo, mirándonos como si el resto del mundo se desvaneciera por un rato. Empezamos hablando de cualquier cosa, y sin darnos cuenta estamos preguntándonos cosas que solo entre nosotros tienen sentido. Entramos en el corazón del otro sin forzar nada, sin máscaras. Solo con la verdad.
+
+Contigo he descubierto que hablar también es amar. Que escucharte, de verdad escucharte, es otra forma de abrazarte.
+
+Gracias por regalarme tantos espacios donde no tuve que fingir nada. Por mirarme como si valiera la pena todo lo que llevo dentro. Por dejarme verte también, con tus miedos, tus ideas, tus sueños.
+
+Ojalá nunca dejemos de hablarnos así.
+Con los ojos. Con la voz. Con el corazón entero.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 19: Cómo crecemos juntos</h2>
+      <p>No siempre es fácil. Amarse de verdad implica aprender, tropezar, ceder, escuchar. Pero contigo he entendido que crecer en pareja no es sinónimo de perfección, sino de intención. De voluntad.
+
+Estar contigo me ha enseñado a mirar hacia adentro. A revisar mis errores sin justificarme, a escuchar sin defenderme, a hablar con más cariño y menos orgullo. Y no porque me lo exijas, sino porque tú eres ese tipo de persona que inspira cambio sin imponerlo.
+
+Me has ayudado a ver cosas en mí que no notaba. Me has retado a ser más paciente, más claro, más honesto incluso cuando es incómodo. Y al mismo tiempo, yo también te he visto transformarte: cuestionarte, mejorar, abrirte. Como si entre los dos nos estuviéramos puliendo, a veces con ternura, a veces con dolor, pero siempre con amor.
+
+Hemos tenido desacuerdos, sí. Momentos difíciles. Pero lo hermoso es que no nos hemos quedado ahí. Hemos buscado soluciones, nos hemos pedido perdón, hemos intentado entender al otro incluso cuando no sabíamos cómo. Y eso, amor, eso es crecer. No porque tengamos todas las respuestas, sino porque elegimos seguir preguntándonos cosas juntos.
+
+Me gusta pensar que no somos los mismos de hace un año, ni siquiera de hace unos meses. Porque algo en nosotros sigue moviéndose, cambiando, aprendiendo. Y qué bonito es poder hacerlo contigo.
+
+Gracias por ser mi espejo, mi impulso, mi maestra y mi compañera en este proceso.
+Seguimos creciendo. Y qué suerte la mía de hacerlo contigo.</p>
+    </section>
+<section class="card">
+      <h2>📩 Carta 20:Nuestro amor con Dios y la fe que compartimos</h2>
+      <p>A veces me pregunto qué fue lo que nos unió realmente. Y no importa cuántas veces lo piense, siempre termino en el mismo lugar: en Dios.
+No porque todo haya sido perfecto desde el inicio, sino porque en medio de nuestras dudas, nuestras torpezas, nuestros aciertos… Él siempre estuvo ahí.
+
+Contigo aprendí que el amor también puede ser espiritual. Que orar juntos, aunque sea en silencio, es una forma de decir “te cuido”. Que cuando hablamos de fe, aunque no siempre sepamos qué responder, lo hacemos desde un lugar de verdad. Y eso vale más que cualquier certeza.
+
+Me has enseñado a buscar a Dios no solo en la iglesia, sino en las pequeñas cosas: en cómo te entregas a los demás, en tu forma de perdonar, en tu manera de amar sin condiciones. Y a la vez, has dejado que yo te muestre mi camino, mi forma de vivir la fe. Nos escuchamos. Nos respetamos. Y nos acompañamos incluso cuando la fe flaquea.
+
+Y me encanta ir a la iglesia contigo. Verte ahí, con esa paz en los ojos, me hace sentir que estamos en el lugar correcto. No solo porque buscamos a Dios, sino porque lo hacemos juntos.
+
+Y yo sé que no somos una pareja “religiosa” en el sentido clásico. Pero sí creo que lo que tenemos está sostenido por algo más grande que nosotros. Porque en cada intento de mejorar, de sanar, de entendernos, hay algo sagrado. Algo que nos trasciende.
+
+Gracias por no burlarte de mis dudas. Gracias por contarme las tuyas. Gracias por hacer espacio a Dios en medio de lo nuestro.
+
+Porque si algo tengo claro, es que el amor más bonito es el que se construye con fe, con paciencia y con propósito.
+Y contigo, ese amor sí es posible.</p>
+    </section>
+<!-- Tus cartas siguen igual -->
+    <!-- ... -->
+  </main>
+
+  <footer>
+    Hecho con amor por quien más te piensa. 🌙✨
+  </footer>
+  
+	
+	
+	
+	<script>
+const cards = document.querySelectorAll('.card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+cards.forEach(card => {
+  observer.observe(card);
+});
+
+</script>
+	
+	<script>
+const inicio = new Date("2023-02-23");
+const hoy = new Date();
+const dias = Math.floor((hoy - inicio) / (1000 * 60 * 60 * 24));
+document.getElementById("contador").innerText =
+"Llevamos " + dias + " días desde que empezó todo 💜";
+</script>
+	
+	<!-- Botón música -->
+<div style="position:fixed; bottom:20px; right:20px; z-index:999;">
+  <button onclick="activarMusica()" 
+    style="padding:10px 18px; border:none; border-radius:25px; cursor:pointer; background:#6a0dad; color:white; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+    Activar música 🎵
+  </button>
+</div>
+
+	
+
+	
+<iframe 
+id="video"
+width="0"
+height="0"
+src="about:blank"
+frameborder="0"
+allow="autoplay; encrypted-media">
+</iframe>
+<script>
+function activarMusica(){
+  document.getElementById("video").src =
+  "https://www.youtube.com/embed/8XRkwAeW82I?autoplay=1&loop=1&playlist=8XRkwAeW82I";
+}
+</script>
+	
+	</body> </html>
